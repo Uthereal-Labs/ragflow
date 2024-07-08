@@ -18,11 +18,11 @@ import os
 from huggingface_hub import snapshot_download
 
 from ragflow.api.utils.file_utils import get_project_base_directory
-from ragflow.vision.operators import *
+from ragflow.deepdoc.vision.operators import *
 import numpy as np
 import onnxruntime as ort
 
-from .postprocess import build_post_process
+from ragflow.deepdoc.vision.postprocess import build_post_process
 from ragflow.rag.settings import cron_logger
 
 
