@@ -13,17 +13,17 @@
 
 import pdfplumber
 
-from .ocr import OCR
-from .recognizer import Recognizer
-from .layout_recognizer import LayoutRecognizer
-from .table_structure_recognizer import TableStructureRecognizer
+from ragflow.deepdoc.vision.ocr import OCR
+from ragflow.deepdoc.vision.recognizer import Recognizer
+from ragflow.deepdoc.vision.layout_recognizer import LayoutRecognizer
+from ragflow.deepdoc.vision.table_structure_recognizer import TableStructureRecognizer
 
 
 def init_in_out(args):
     from PIL import Image
     import os
     import traceback
-    from api.utils.file_utils import traversal_files
+    from ragflow.api.utils.file_utils import traversal_files
     images = []
     outputs = []
 
