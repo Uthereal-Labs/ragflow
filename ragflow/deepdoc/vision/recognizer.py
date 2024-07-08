@@ -18,7 +18,7 @@ import onnxruntime as ort
 from huggingface_hub import snapshot_download
 
 from ragflow.api.utils.file_utils import get_project_base_directory
-from ragflow.vision.operators import *
+from ragflow.deepdoc.vision.operators import *
 from ragflow.rag.settings import cron_logger
 
 

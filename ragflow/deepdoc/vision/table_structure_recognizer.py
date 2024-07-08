@@ -20,7 +20,7 @@ from huggingface_hub import snapshot_download
 
 from ragflow.api.utils.file_utils import get_project_base_directory
 from ragflow.rag.nlp import rag_tokenizer
-from ragflow.vision.recognizer import Recognizer
+from ragflow.deepdoc.vision.recognizer import Recognizer
 
 
 class TableStructureRecognizer(Recognizer):
