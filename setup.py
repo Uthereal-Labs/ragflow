@@ -8,7 +8,7 @@ setup(
     name='ragflow',
     version='0.1',
     packages=find_packages(),
-    install_requires=parse_requirements('requirements.txt'),
+    install_requires=parse_requirements('requirements_arm.txt'),
     author='Original Author',
     author_email='author@example.com',
     description='RAGFlow is an open-source RAG (Retrieval-Augmented Generation) engine.',
