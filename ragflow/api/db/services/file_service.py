@@ -16,13 +16,13 @@
 from flask_login import current_user
 from peewee import fn
 
-from api.db import FileType, KNOWLEDGEBASE_FOLDER_NAME, FileSource
-from api.db.db_models import DB, File2Document, Knowledgebase
-from api.db.db_models import File, Document
-from api.db.services.common_service import CommonService
-from api.db.services.document_service import DocumentService
-from api.db.services.file2document_service import File2DocumentService
-from api.utils import get_uuid
+from ragflow.api.db import FileType, KNOWLEDGEBASE_FOLDER_NAME, FileSource
+from ragflow.api.db.db_models import DB, File2Document, Knowledgebase
+from ragflow.api.db.db_models import File, Document
+from ragflow.api.db.services.common_service import CommonService
+from ragflow.api.db.services.document_service import DocumentService
+from ragflow.api.db.services.file2document_service import File2DocumentService
+from ragflow.api.utils import get_uuid
 
 
 class FileService(CommonService):

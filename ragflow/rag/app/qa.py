@@ -16,10 +16,10 @@ from io import BytesIO
 from timeit import default_timer as timer
 from nltk import word_tokenize
 from openpyxl import load_workbook
-from rag.nlp import is_english, random_choices, find_codec, qbullets_category, add_positions, has_qbullet, docx_question_level
-from rag.nlp import rag_tokenizer, tokenize_table, concat_img
-from rag.settings import cron_logger
-from deepdoc.parser import PdfParser, ExcelParser, DocxParser
+from ragflow.rag.nlp import is_english, random_choices, find_codec, qbullets_category, add_positions, has_qbullet, docx_question_level
+from ragflow.rag.nlp import rag_tokenizer, tokenize_table, concat_img
+from ragflow.rag.settings import cron_logger
+from ragflow.deepdoc.parser import PdfParser, ExcelParser, DocxParser
 from docx import Document
 from PIL import Image
 from markdown import markdown

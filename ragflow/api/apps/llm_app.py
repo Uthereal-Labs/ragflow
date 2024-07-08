@@ -15,12 +15,12 @@
 #
 from flask import request
 from flask_login import login_required, current_user
-from api.db.services.llm_service import LLMFactoriesService, TenantLLMService, LLMService
-from api.utils.api_utils import server_error_response, get_data_error_result, validate_request
-from api.db import StatusEnum, LLMType
-from api.db.db_models import TenantLLM
-from api.utils.api_utils import get_json_result
-from rag.llm import EmbeddingModel, ChatModel, RerankModel
+from ragflow.api.db.services.llm_service import LLMFactoriesService, TenantLLMService, LLMService
+from ragflow.api.utils.api_utils import server_error_response, get_data_error_result, validate_request
+from ragflow.api.db import StatusEnum, LLMType
+from ragflow.api.db.db_models import TenantLLM
+from ragflow.api.utils.api_utils import get_json_result
+from ragflow.rag.llm import EmbeddingModel, ChatModel, RerankModel
 
 
 @manager.route('/factories', methods=['GET'])

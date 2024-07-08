@@ -20,7 +20,7 @@ import pandas as pd
 import requests
 import re
 
-from graph.component.base import ComponentBase, ComponentParamBase
+from ragflow.graph.component.base import ComponentBase, ComponentParamBase
 
 
 class BaiduParam(ComponentParamBase):

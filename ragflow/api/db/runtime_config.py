@@ -13,8 +13,8 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 #
-from api.versions import get_versions
-from .reload_config_base import ReloadConfigBase
+from ragflow.api.versions import get_versions
+from ragflow.api.db.reload_config_base import ReloadConfigBase
 
 
 class RuntimeConfig(ReloadConfigBase):

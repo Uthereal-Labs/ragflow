@@ -18,12 +18,12 @@ from datetime import datetime
 import peewee
 from werkzeug.security import generate_password_hash, check_password_hash
 
-from api.db import UserTenantRole
-from api.db.db_models import DB, UserTenant
-from api.db.db_models import User, Tenant
-from api.db.services.common_service import CommonService
-from api.utils import get_uuid, get_format_time, current_timestamp, datetime_format
-from api.db import StatusEnum
+from ragflow.api.db import UserTenantRole
+from ragflow.api.db.db_models import DB, UserTenant
+from ragflow.api.db.db_models import User, Tenant
+from ragflow.api.db.services.common_service import CommonService
+from ragflow.api.utils import get_uuid, get_format_time, current_timestamp, datetime_format
+from ragflow.api.db import StatusEnum
 
 
 class UserService(CommonService):

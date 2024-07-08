@@ -17,11 +17,11 @@ import operator
 from functools import reduce
 from typing import Dict, Type, Union
 
-from api.utils import current_timestamp, timestamp_to_date
+from ragflow.api.utils import current_timestamp, timestamp_to_date
 
-from api.db.db_models import DB, DataBaseModel
-from api.db.runtime_config import RuntimeConfig
-from api.utils.log_utils import getLogger
+from ragflow.api.db.db_models import DB, DataBaseModel
+from ragflow.api.db.runtime_config import RuntimeConfig
+from ragflow.api.utils.log_utils import getLogger
 from enum import Enum
 
 

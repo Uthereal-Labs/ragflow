@@ -15,15 +15,15 @@
 #
 from flask_login import login_required
 
-from api.db.services.knowledgebase_service import KnowledgebaseService
-from api.utils.api_utils import get_json_result
-from api.versions import get_rag_version
-from rag.settings import SVR_QUEUE_NAME
-from rag.utils.es_conn import ELASTICSEARCH
-from rag.utils.minio_conn import MINIO
+from ragflow.api.db.services.knowledgebase_service import KnowledgebaseService
+from ragflow.api.utils.api_utils import get_json_result
+from ragflow.api.versions import get_rag_version
+from ragflow.rag.settings import SVR_QUEUE_NAME
+from ragflow.rag.utils.es_conn import ELASTICSEARCH
+from ragflow.rag.utils.minio_conn import MINIO
 from timeit import default_timer as timer
 
-from rag.utils.redis_conn import REDIS_CONN
+from ragflow.rag.utils.redis_conn import REDIS_CONN
 
 
 @manager.route('/version', methods=['GET'])

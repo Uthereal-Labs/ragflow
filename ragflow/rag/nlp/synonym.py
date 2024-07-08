@@ -20,7 +20,7 @@ import time
 import logging
 import re
 
-from api.utils.file_utils import get_project_base_directory
+from ragflow.api.utils.file_utils import get_project_base_directory
 
 
 class Dealer:

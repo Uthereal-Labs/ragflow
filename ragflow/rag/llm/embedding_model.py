@@ -29,8 +29,8 @@ from FlagEmbedding import FlagModel
 import torch
 import numpy as np
 import asyncio
-from api.utils.file_utils import get_home_cache_dir
-from rag.utils import num_tokens_from_string, truncate
+from ragflow.api.utils.file_utils import get_home_cache_dir
+from ragflow.rag.utils import num_tokens_from_string, truncate
 
 
 class Base(ABC):

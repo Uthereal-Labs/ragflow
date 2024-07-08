@@ -16,10 +16,10 @@
 from copy import deepcopy
 from flask import request, Response
 from flask_login import login_required
-from api.db.services.dialog_service import DialogService, ConversationService, chat
-from api.utils.api_utils import server_error_response, get_data_error_result, validate_request
-from api.utils import get_uuid
-from api.utils.api_utils import get_json_result
+from ragflow.api.db.services.dialog_service import DialogService, ConversationService, chat
+from ragflow.api.utils.api_utils import server_error_response, get_data_error_result, validate_request
+from ragflow.api.utils import get_uuid
+from ragflow.api.utils.api_utils import get_json_result
 import json
 
 

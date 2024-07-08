@@ -24,15 +24,15 @@ from flask import (
 )
 from werkzeug.http import HTTP_STATUS_CODES
 
-from api.utils import json_dumps
-from api.settings import RetCode
-from api.settings import (
+from ragflow.api.utils import json_dumps
+from ragflow.api.settings import RetCode
+from ragflow.api.settings import (
     REQUEST_MAX_WAIT_SEC, REQUEST_WAIT_SEC,
     stat_logger, CLIENT_AUTHENTICATION, HTTP_APP_KEY, SECRET_KEY
 )
 import requests
 import functools
-from api.utils import CustomJSONEncoder
+from ragflow.api.utils import CustomJSONEncoder
 from uuid import uuid1
 from base64 import b64encode
 from hmac import HMAC

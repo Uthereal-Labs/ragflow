@@ -15,8 +15,8 @@
 #
 from datetime import datetime
 import peewee
-from api.db.db_models import DB, API4Conversation, APIToken, Dialog, CanvasTemplate, UserCanvas
-from api.db.services.common_service import CommonService
+from ragflow.api.db.db_models import DB, API4Conversation, APIToken, Dialog, CanvasTemplate, UserCanvas
+from ragflow.api.db.services.common_service import CommonService
 
 
 class CanvasTemplateService(CommonService):

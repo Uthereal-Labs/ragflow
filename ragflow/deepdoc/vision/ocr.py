@@ -17,13 +17,13 @@ import os
 
 from huggingface_hub import snapshot_download
 
-from api.utils.file_utils import get_project_base_directory
-from .operators import *
+from ragflow.api.utils.file_utils import get_project_base_directory
+from ragflow.vision.operators import *
 import numpy as np
 import onnxruntime as ort
 
 from .postprocess import build_post_process
-from rag.settings import cron_logger
+from ragflow.rag.settings import cron_logger
 
 
 def transform(data, ops=None):

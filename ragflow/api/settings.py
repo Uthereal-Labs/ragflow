@@ -15,8 +15,8 @@
 #
 import os
 from enum import IntEnum, Enum
-from api.utils.file_utils import get_project_base_directory
-from api.utils.log_utils import LoggerFactory, getLogger
+from ragflow.api.utils.file_utils import get_project_base_directory
+from ragflow.api.utils.log_utils import LoggerFactory, getLogger
 
 # Logger
 LoggerFactory.set_directory(
@@ -32,9 +32,9 @@ access_logger = getLogger("access")
 database_logger = getLogger("database")
 chat_logger = getLogger("chat")
 
-from rag.utils.es_conn import ELASTICSEARCH
-from rag.nlp import search
-from api.utils import get_base_config, decrypt_database_config
+from ragflow.rag.utils.es_conn import ELASTICSEARCH
+from ragflow.rag.nlp import search
+from ragflow.api.utils import get_base_config, decrypt_database_config
 
 API_VERSION = "v1"
 RAG_FLOW_SERVICE_NAME = "ragflow"

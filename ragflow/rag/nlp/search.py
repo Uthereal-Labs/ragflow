@@ -22,9 +22,9 @@ from elasticsearch_dsl import Q, Search
 from typing import List, Optional, Dict, Union
 from dataclasses import dataclass
 
-from rag.settings import es_logger
-from rag.utils import rmSpace
-from rag.nlp import rag_tokenizer, query
+from ragflow.rag.settings import es_logger
+from ragflow.rag.utils import rmSpace
+from ragflow.rag.nlp import rag_tokenizer, query
 import numpy as np
 
 

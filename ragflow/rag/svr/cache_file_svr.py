@@ -17,11 +17,11 @@ import random
 import time
 import traceback
 
-from api.db.db_models import close_connection
-from api.db.services.task_service import TaskService
-from rag.settings import cron_logger
-from rag.utils.minio_conn import MINIO
-from rag.utils.redis_conn import REDIS_CONN
+from ragflow.api.db.db_models import close_connection
+from ragflow.api.db.services.task_service import TaskService
+from ragflow.rag.settings import cron_logger
+from ragflow.rag.utils.minio_conn import MINIO
+from ragflow.rag.utils.redis_conn import REDIS_CONN
 
 
 def collect():

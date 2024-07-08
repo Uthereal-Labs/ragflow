@@ -16,19 +16,19 @@
 import os
 import random
 
-from api.db.db_utils import bulk_insert_into_db
-from deepdoc.parser import PdfParser
+from ragflow.api.db.db_utils import bulk_insert_into_db
+from ragflow.deepdoc.parser import PdfParser
 from peewee import JOIN
-from api.db.db_models import DB, File2Document, File
-from api.db import StatusEnum, FileType, TaskStatus
-from api.db.db_models import Task, Document, Knowledgebase, Tenant
-from api.db.services.common_service import CommonService
-from api.db.services.document_service import DocumentService
-from api.utils import current_timestamp, get_uuid
-from deepdoc.parser.excel_parser import RAGFlowExcelParser
-from rag.settings import SVR_QUEUE_NAME
-from rag.utils.minio_conn import MINIO
-from rag.utils.redis_conn import REDIS_CONN
+from ragflow.api.db.db_models import DB, File2Document, File
+from ragflow.api.db import StatusEnum, FileType, TaskStatus
+from ragflow.api.db.db_models import Task, Document, Knowledgebase, Tenant
+from ragflow.api.db.services.common_service import CommonService
+from ragflow.api.db.services.document_service import DocumentService
+from ragflow.api.utils import current_timestamp, get_uuid
+from ragflow.deepdoc.parser.excel_parser import RAGFlowExcelParser
+from ragflow.rag.settings import SVR_QUEUE_NAME
+from ragflow.rag.utils.minio_conn import MINIO
+from ragflow.rag.utils.redis_conn import REDIS_CONN
 
 
 class TaskService(CommonService):

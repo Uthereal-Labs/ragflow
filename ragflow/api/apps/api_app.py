@@ -20,24 +20,24 @@ from datetime import datetime, timedelta
 from flask import request, Response
 from flask_login import login_required, current_user
 
-from api.db import FileType, ParserType, FileSource
-from api.db.db_models import APIToken, API4Conversation, Task, File
-from api.db.services import duplicate_name
-from api.db.services.api_service import APITokenService, API4ConversationService
-from api.db.services.dialog_service import DialogService, chat
-from api.db.services.document_service import DocumentService
-from api.db.services.file2document_service import File2DocumentService
-from api.db.services.file_service import FileService
-from api.db.services.knowledgebase_service import KnowledgebaseService
-from api.db.services.task_service import queue_tasks, TaskService
-from api.db.services.user_service import UserTenantService
-from api.settings import RetCode, retrievaler
-from api.utils import get_uuid, current_timestamp, datetime_format
-from api.utils.api_utils import server_error_response, get_data_error_result, get_json_result, validate_request
+from ragflow.api.db import FileType, ParserType, FileSource
+from ragflow.api.db.db_models import APIToken, API4Conversation, Task, File
+from ragflow.api.db.services import duplicate_name
+from ragflow.api.db.services.api_service import APITokenService, API4ConversationService
+from ragflow.api.db.services.dialog_service import DialogService, chat
+from ragflow.api.db.services.document_service import DocumentService
+from ragflow.api.db.services.file2document_service import File2DocumentService
+from ragflow.api.db.services.file_service import FileService
+from ragflow.api.db.services.knowledgebase_service import KnowledgebaseService
+from ragflow.api.db.services.task_service import queue_tasks, TaskService
+from ragflow.api.db.services.user_service import UserTenantService
+from ragflow.api.settings import RetCode, retrievaler
+from ragflow.api.utils import get_uuid, current_timestamp, datetime_format
+from ragflow.api.utils.api_utils import server_error_response, get_data_error_result, get_json_result, validate_request
 from itsdangerous import URLSafeTimedSerializer
 
-from api.utils.file_utils import filename_type, thumbnail
-from rag.utils.minio_conn import MINIO
+from ragflow.api.utils.file_utils import filename_type, thumbnail
+from ragflow.rag.utils.minio_conn import MINIO
 
 
 def generate_confirmation_token(tenent_id):

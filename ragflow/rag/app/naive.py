@@ -15,11 +15,11 @@ from io import BytesIO
 from docx import Document
 from timeit import default_timer as timer
 import re
-from deepdoc.parser.pdf_parser import PlainParser
-from rag.nlp import rag_tokenizer, naive_merge, tokenize_table, tokenize_chunks, find_codec, concat_img, naive_merge_docx, tokenize_chunks_docx
-from deepdoc.parser import PdfParser, ExcelParser, DocxParser, HtmlParser, JsonParser, MarkdownParser
-from rag.settings import cron_logger
-from rag.utils import num_tokens_from_string
+from ragflow.deepdoc.parser.pdf_parser import PlainParser
+from ragflow.rag.nlp import rag_tokenizer, naive_merge, tokenize_table, tokenize_chunks, find_codec, concat_img, naive_merge_docx, tokenize_chunks_docx
+from ragflow.deepdoc.parser import PdfParser, ExcelParser, DocxParser, HtmlParser, JsonParser, MarkdownParser
+from ragflow.rag.settings import cron_logger
+from ragflow.rag.utils import num_tokens_from_string
 from PIL import Image
 from functools import reduce
 from markdown import markdown

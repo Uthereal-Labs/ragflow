@@ -19,8 +19,8 @@ import json
 import re
 import os
 import numpy as np
-from rag.nlp import rag_tokenizer
-from api.utils.file_utils import get_project_base_directory
+from ragflow.rag.nlp import rag_tokenizer
+from ragflow.api.utils.file_utils import get_project_base_directory
 
 
 class Dealer:

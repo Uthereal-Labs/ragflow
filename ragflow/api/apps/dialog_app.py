@@ -16,13 +16,13 @@
 
 from flask import request
 from flask_login import login_required, current_user
-from api.db.services.dialog_service import DialogService
-from api.db import StatusEnum
-from api.db.services.knowledgebase_service import KnowledgebaseService
-from api.db.services.user_service import TenantService
-from api.utils.api_utils import server_error_response, get_data_error_result, validate_request
-from api.utils import get_uuid
-from api.utils.api_utils import get_json_result
+from ragflow.api.db.services.dialog_service import DialogService
+from ragflow.api.db import StatusEnum
+from ragflow.api.db.services.knowledgebase_service import KnowledgebaseService
+from ragflow.api.db.services.user_service import TenantService
+from ragflow.api.utils.api_utils import server_error_response, get_data_error_result, validate_request
+from ragflow.api.utils import get_uuid
+from ragflow.api.utils.api_utils import get_json_result
 
 
 @manager.route('/set', methods=['POST'])

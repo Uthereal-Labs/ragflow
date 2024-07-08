@@ -15,12 +15,12 @@
 #
 from datetime import datetime
 
-from api.db import FileSource
-from api.db.db_models import DB
-from api.db.db_models import File, File2Document
-from api.db.services.common_service import CommonService
-from api.db.services.document_service import DocumentService
-from api.utils import current_timestamp, datetime_format, get_uuid
+from ragflow.api.db import FileSource
+from ragflow.api.db.db_models import DB
+from ragflow.api.db.db_models import File, File2Document
+from ragflow.api.db.services.common_service import CommonService
+from ragflow.api.db.services.document_service import DocumentService
+from ragflow.api.utils import current_timestamp, datetime_format, get_uuid
 
 
 class File2DocumentService(CommonService):

@@ -17,5 +17,5 @@
 import operator
 import time
 import typing
-from api.utils.log_utils import sql_logger
+from ragflow.api.utils.log_utils import sql_logger
 import peewee

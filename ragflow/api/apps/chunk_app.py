@@ -19,18 +19,18 @@ from flask import request
 from flask_login import login_required, current_user
 from elasticsearch_dsl import Q
 
-from rag.app.qa import rmPrefix, beAdoc
-from rag.nlp import search, rag_tokenizer, keyword_extraction
-from rag.utils.es_conn import ELASTICSEARCH
-from rag.utils import rmSpace
-from api.db import LLMType, ParserType
-from api.db.services.knowledgebase_service import KnowledgebaseService
-from api.db.services.llm_service import TenantLLMService
-from api.db.services.user_service import UserTenantService
-from api.utils.api_utils import server_error_response, get_data_error_result, validate_request
-from api.db.services.document_service import DocumentService
-from api.settings import RetCode, retrievaler
-from api.utils.api_utils import get_json_result
+from ragflow.rag.app.qa import rmPrefix, beAdoc
+from ragflow.rag.nlp import search, rag_tokenizer, keyword_extraction
+from ragflow.rag.utils.es_conn import ELASTICSEARCH
+from ragflow.rag.utils import rmSpace
+from ragflow.api.db import LLMType, ParserType
+from ragflow.api.db.services.knowledgebase_service import KnowledgebaseService
+from ragflow.api.db.services.llm_service import TenantLLMService
+from ragflow.api.db.services.user_service import UserTenantService
+from ragflow.api.utils.api_utils import server_error_response, get_data_error_result, validate_request
+from ragflow.api.db.services.document_service import DocumentService
+from ragflow.api.settings import RetCode, retrievaler
+from ragflow.api.utils.api_utils import get_json_result
 import hashlib
 import re
 

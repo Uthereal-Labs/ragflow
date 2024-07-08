@@ -23,17 +23,17 @@ import traceback
 from concurrent.futures import ThreadPoolExecutor
 
 from werkzeug.serving import run_simple
-from api.apps import app
-from api.db.runtime_config import RuntimeConfig
-from api.db.services.document_service import DocumentService
-from api.settings import (
+from ragflow.api.apps import app
+from ragflow.api.db.runtime_config import RuntimeConfig
+from ragflow.api.db.services.document_service import DocumentService
+from ragflow.api.settings import (
     HOST, HTTP_PORT, access_logger, database_logger, stat_logger,
 )
-from api import utils
+from ragflow.api import utils
 
-from api.db.db_models import init_database_tables as init_web_db
-from api.db.init_data import init_web_data
-from api.versions import get_versions
+from ragflow.api.db.db_models import init_database_tables as init_web_db
+from ragflow.api.db.init_data import init_web_data
+from ragflow.api.versions import get_versions
 
 
 def update_progress():

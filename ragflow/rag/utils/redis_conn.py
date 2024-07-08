@@ -2,8 +2,8 @@ import json
 
 import redis
 import logging
-from rag import settings
-from rag.utils import singleton
+from ragflow.rag import settings
+from ragflow.rag.utils import singleton
 
 
 class Payload:

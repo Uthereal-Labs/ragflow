@@ -16,12 +16,12 @@ import re
 from io import BytesIO
 from docx import Document
 
-from api.db import ParserType
-from rag.nlp import bullets_category, is_english, tokenize, remove_contents_table, hierarchical_merge, \
+from ragflow.api.db import ParserType
+from ragflow.rag.nlp import bullets_category, is_english, tokenize, remove_contents_table, hierarchical_merge, \
     make_colon_as_title, add_positions, tokenize_chunks, find_codec, docx_question_level
-from rag.nlp import rag_tokenizer
-from deepdoc.parser import PdfParser, DocxParser, PlainParser, HtmlParser
-from rag.settings import cron_logger
+from ragflow.rag.nlp import rag_tokenizer
+from ragflow.deepdoc.parser import PdfParser, DocxParser, PlainParser, HtmlParser
+from ragflow.rag.settings import cron_logger
 
 
 class Docx(DocxParser):

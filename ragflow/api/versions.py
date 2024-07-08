@@ -16,7 +16,7 @@
 import os
 import dotenv
 import typing
-from api.utils.file_utils import get_project_base_directory
+from ragflow.api.utils.file_utils import get_project_base_directory
 
 
 def get_versions() -> typing.Mapping[str, typing.Any]:

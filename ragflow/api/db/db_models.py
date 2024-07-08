@@ -28,10 +28,10 @@ from peewee import (
     Field, Model, Metadata
 )
 from playhouse.pool import PooledMySQLDatabase
-from api.db import SerializedType, ParserType
-from api.settings import DATABASE, stat_logger, SECRET_KEY
-from api.utils.log_utils import getLogger
-from api import utils
+from ragflow.api.db import SerializedType, ParserType
+from ragflow.api.settings import DATABASE, stat_logger, SECRET_KEY
+from ragflow.api.utils.log_utils import getLogger
+from ragflow.api import utils
 
 LOGGER = getLogger()
 

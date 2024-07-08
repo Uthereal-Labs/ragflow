@@ -15,10 +15,10 @@
 #
 import re
 from abc import ABC
-from api.db import LLMType
-from api.db.services.llm_service import LLMBundle
-from graph.component import GenerateParam, Generate
-from graph.settings import DEBUG
+from ragflow.api.db import LLMType
+from ragflow.api.db.services.llm_service import LLMBundle
+from ragflow.graph.component import GenerateParam, Generate
+from ragflow.graph.settings import DEBUG
 
 
 class KeywordExtractParam(GenerateParam):

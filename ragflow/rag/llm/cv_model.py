@@ -24,8 +24,8 @@ import os
 import base64
 from io import BytesIO
 
-from api.utils import get_uuid
-from api.utils.file_utils import get_project_base_directory
+from ragflow.api.utils import get_uuid
+from ragflow.api.utils.file_utils import get_project_base_directory
 
 
 class Base(ABC):

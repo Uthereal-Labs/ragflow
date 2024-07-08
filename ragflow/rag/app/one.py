@@ -13,9 +13,9 @@
 from tika import parser
 from io import BytesIO
 import re
-from rag.app import laws
-from rag.nlp import rag_tokenizer, tokenize, find_codec
-from deepdoc.parser import PdfParser, ExcelParser, PlainParser, HtmlParser
+from ragflow.rag.app import laws
+from ragflow.rag.nlp import rag_tokenizer, tokenize, find_codec
+from ragflow.deepdoc.parser import PdfParser, ExcelParser, PlainParser, HtmlParser
 
 
 class Pdf(PdfParser):

@@ -17,8 +17,8 @@ from copy import deepcopy
 import numpy as np
 from huggingface_hub import snapshot_download
 
-from api.utils.file_utils import get_project_base_directory
-from deepdoc.vision import Recognizer
+from ragflow.api.utils.file_utils import get_project_base_directory
+from ragflow.deepdoc.vision import Recognizer
 
 
 class LayoutRecognizer(Recognizer):

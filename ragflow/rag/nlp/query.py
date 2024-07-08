@@ -21,7 +21,7 @@ import logging
 import copy
 from elasticsearch_dsl import Q
 
-from rag.nlp import rag_tokenizer, term_weight, synonym
+from ragflow.rag.nlp import rag_tokenizer, term_weight, synonym
 
 class EsQueryer:
     def __init__(self, es):

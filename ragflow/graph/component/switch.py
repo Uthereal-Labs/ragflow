@@ -17,11 +17,11 @@ from abc import ABC
 
 import pandas as pd
 
-from api.db import LLMType
-from api.db.services.knowledgebase_service import KnowledgebaseService
-from api.db.services.llm_service import LLMBundle
-from api.settings import retrievaler
-from graph.component.base import ComponentBase, ComponentParamBase
+from ragflow.api.db import LLMType
+from ragflow.api.db.services.knowledgebase_service import KnowledgebaseService
+from ragflow.api.db.services.llm_service import LLMBundle
+from ragflow.api.settings import retrievaler
+from ragflow.graph.component.base import ComponentBase, ComponentParamBase
 
 
 class SwitchParam(ComponentParamBase):

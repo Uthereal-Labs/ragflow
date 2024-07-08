@@ -22,8 +22,8 @@ from huggingface_hub import snapshot_download
 import os
 from abc import ABC
 import numpy as np
-from api.utils.file_utils import get_home_cache_dir
-from rag.utils import num_tokens_from_string, truncate
+from ragflow.api.utils.file_utils import get_home_cache_dir
+from ragflow.rag.utils import num_tokens_from_string, truncate
 
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))

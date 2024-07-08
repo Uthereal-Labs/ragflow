@@ -7,9 +7,9 @@ import elasticsearch
 from elastic_transport import ConnectionTimeout
 from elasticsearch import Elasticsearch
 from elasticsearch_dsl import UpdateByQuery, Search, Index
-from rag.settings import es_logger
-from rag import settings
-from rag.utils import singleton
+from ragflow.rag.settings import es_logger
+from ragflow.rag import settings
+from ragflow.rag.utils import singleton
 
 es_logger.info("Elasticsearch version: "+str(elasticsearch.__version__))
 

@@ -2,9 +2,9 @@ import os
 import time
 from minio import Minio
 from io import BytesIO
-from rag import settings
-from rag.settings import minio_logger
-from rag.utils import singleton
+from ragflow.rag import settings
+from ragflow.rag.settings import minio_logger
+from ragflow.rag.utils import singleton
 
 
 @singleton

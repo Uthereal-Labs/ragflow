@@ -15,10 +15,10 @@ import io
 import numpy as np
 from PIL import Image
 
-from api.db import LLMType
-from api.db.services.llm_service import LLMBundle
-from rag.nlp import tokenize
-from deepdoc.vision import OCR
+from ragflow.api.db import LLMType
+from ragflow.api.db.services.llm_service import LLMBundle
+from ragflow.rag.nlp import tokenize
+from ragflow.deepdoc.vision import OCR
 
 ocr = OCR()
 

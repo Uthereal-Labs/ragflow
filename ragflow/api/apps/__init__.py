@@ -22,16 +22,16 @@ from flask import Blueprint, Flask
 from werkzeug.wrappers.request import Request
 from flask_cors import CORS
 
-from api.db import StatusEnum
-from api.db.db_models import close_connection
-from api.db.services import UserService
-from api.utils import CustomJSONEncoder
+from ragflow.api.db import StatusEnum
+from ragflow.api.db.db_models import close_connection
+from ragflow.api.db.services import UserService
+from ragflow.api.utils import CustomJSONEncoder
 
 from flask_session import Session
 from flask_login import LoginManager
-from api.settings import SECRET_KEY, stat_logger
-from api.settings import API_VERSION, access_logger
-from api.utils.api_utils import server_error_response
+from ragflow.api.settings import SECRET_KEY, stat_logger
+from ragflow.api.settings import API_VERSION, access_logger
+from ragflow.api.utils.api_utils import server_error_response
 from itsdangerous.url_safe import URLSafeTimedSerializer as Serializer
 
 __all__ = ['app']

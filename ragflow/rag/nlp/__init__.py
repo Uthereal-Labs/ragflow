@@ -17,8 +17,8 @@
 import random
 from collections import Counter
 
-from rag.utils import num_tokens_from_string
-from . import rag_tokenizer
+from ragflow.rag.utils import num_tokens_from_string
+from ragflow.rag.nlp import rag_tokenizer
 import re
 import copy
 import roman_numbers as r

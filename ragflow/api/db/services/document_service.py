@@ -18,21 +18,21 @@ from datetime import datetime
 from elasticsearch_dsl import Q
 from peewee import fn
 
-from api.db.db_utils import bulk_insert_into_db
-from api.settings import stat_logger
-from api.utils import current_timestamp, get_format_time, get_uuid
-from rag.settings import SVR_QUEUE_NAME
-from rag.utils.es_conn import ELASTICSEARCH
-from rag.utils.minio_conn import MINIO
-from rag.nlp import search
+from ragflow.api.db.db_utils import bulk_insert_into_db
+from ragflow.api.settings import stat_logger
+from ragflow.api.utils import current_timestamp, get_format_time, get_uuid
+from ragflow.rag.settings import SVR_QUEUE_NAME
+from ragflow.rag.utils.es_conn import ELASTICSEARCH
+from ragflow.rag.utils.minio_conn import MINIO
+from ragflow.rag.nlp import search
 
-from api.db import FileType, TaskStatus
-from api.db.db_models import DB, Knowledgebase, Tenant, Task
-from api.db.db_models import Document
-from api.db.services.common_service import CommonService
-from api.db.services.knowledgebase_service import KnowledgebaseService
-from api.db import StatusEnum
-from rag.utils.redis_conn import REDIS_CONN
+from ragflow.api.db import FileType, TaskStatus
+from ragflow.api.db.db_models import DB, Knowledgebase, Tenant, Task
+from ragflow.api.db.db_models import Document
+from ragflow.api.db.services.common_service import CommonService
+from ragflow.api.db.services.knowledgebase_service import KnowledgebaseService
+from ragflow.api.db import StatusEnum
+from ragflow.rag.utils.redis_conn import REDIS_CONN
 
 
 class DocumentService(CommonService):

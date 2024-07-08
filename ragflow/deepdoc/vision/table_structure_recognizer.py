@@ -18,9 +18,9 @@ from collections import Counter
 import numpy as np
 from huggingface_hub import snapshot_download
 
-from api.utils.file_utils import get_project_base_directory
-from rag.nlp import rag_tokenizer
-from .recognizer import Recognizer
+from ragflow.api.utils.file_utils import get_project_base_directory
+from ragflow.rag.nlp import rag_tokenizer
+from ragflow.vision.recognizer import Recognizer
 
 
 class TableStructureRecognizer(Recognizer):

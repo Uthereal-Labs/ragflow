@@ -19,9 +19,9 @@ import pandas as pd
 from openpyxl import load_workbook
 from dateutil.parser import parse as datetime_parse
 
-from api.db.services.knowledgebase_service import KnowledgebaseService
-from rag.nlp import rag_tokenizer, is_english, tokenize, find_codec
-from deepdoc.parser import ExcelParser
+from ragflow.api.db.services.knowledgebase_service import KnowledgebaseService
+from ragflow.rag.nlp import rag_tokenizer, is_english, tokenize, find_codec
+from ragflow.deepdoc.parser import ExcelParser
 
 
 class Excel(ExcelParser):

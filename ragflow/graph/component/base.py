@@ -23,8 +23,8 @@ from typing import List, Dict, Tuple, Union
 
 import pandas as pd
 
-from graph import settings
-from graph.settings import flow_logger, DEBUG
+from ragflow.graph import settings
+from ragflow.graph.settings import flow_logger, DEBUG
 
 _FEEDED_DEPRECATED_PARAMS = "_feeded_deprecated_params"
 _DEPRECATED_PARAMS = "_deprecated_params"

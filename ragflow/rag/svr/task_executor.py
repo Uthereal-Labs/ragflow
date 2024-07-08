@@ -25,33 +25,33 @@ import time
 import traceback
 from functools import partial
 
-from api.db.services.file2document_service import File2DocumentService
-from api.settings import retrievaler
-from rag.raptor import RecursiveAbstractiveProcessing4TreeOrganizedRetrieval as Raptor
-from rag.utils.minio_conn import MINIO
-from api.db.db_models import close_connection
-from rag.settings import database_logger, SVR_QUEUE_NAME
-from rag.settings import cron_logger, DOC_MAXIMUM_SIZE
+from ragflow.api.db.services.file2document_service import File2DocumentService
+from ragflow.api.settings import retrievaler
+from ragflow.rag.raptor import RecursiveAbstractiveProcessing4TreeOrganizedRetrieval as Raptor
+from ragflow.rag.utils.minio_conn import MINIO
+from ragflow.api.db.db_models import close_connection
+from ragflow.rag.settings import database_logger, SVR_QUEUE_NAME
+from ragflow.rag.settings import cron_logger, DOC_MAXIMUM_SIZE
 from multiprocessing import Pool
 import numpy as np
 from elasticsearch_dsl import Q, Search
 from multiprocessing.context import TimeoutError
-from api.db.services.task_service import TaskService
-from rag.utils.es_conn import ELASTICSEARCH
+from ragflow.api.db.services.task_service import TaskService
+from ragflow.rag.utils.es_conn import ELASTICSEARCH
 from timeit import default_timer as timer
-from rag.utils import rmSpace, findMaxTm, num_tokens_from_string
+from ragflow.rag.utils import rmSpace, findMaxTm, num_tokens_from_string
 
-from rag.nlp import search, rag_tokenizer
+from ragflow.rag.nlp import search, rag_tokenizer
 from io import BytesIO
 import pandas as pd
 
-from rag.app import laws, paper, presentation, manual, qa, table, book, resume, picture, naive, one
+from ragflow.rag.app import laws, paper, presentation, manual, qa, table, book, resume, picture, naive, one
 
-from api.db import LLMType, ParserType
-from api.db.services.document_service import DocumentService
-from api.db.services.llm_service import LLMBundle
-from api.utils.file_utils import get_project_base_directory
-from rag.utils.redis_conn import REDIS_CONN
+from ragflow.api.db import LLMType, ParserType
+from ragflow.api.db.services.document_service import DocumentService
+from ragflow.api.db.services.llm_service import LLMBundle
+from ragflow.api.utils.file_utils import get_project_base_directory
+from ragflow.rag.utils.redis_conn import REDIS_CONN
 
 BATCH_SIZE = 64
 

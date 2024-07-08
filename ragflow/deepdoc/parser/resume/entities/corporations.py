@@ -13,8 +13,8 @@
 
 import re,json,os
 import pandas as pd
-from rag.nlp import rag_tokenizer
-from . import regions
+from ragflow.rag.nlp import rag_tokenizer
+from ragflow.deepdoc.parser.resume.entities import regions
 current_file_path = os.path.dirname(os.path.abspath(__file__))
 GOODS = pd.read_csv(os.path.join(current_file_path, "res/corp_baike_len.csv"), sep="\t", header=0).fillna(0)
 GOODS["cid"] = GOODS["cid"].astype(str)

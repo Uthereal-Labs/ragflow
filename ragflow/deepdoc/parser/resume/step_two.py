@@ -14,8 +14,8 @@
 import re, copy, time, datetime, demjson3, \
     traceback, signal
 import numpy as np
-from deepdoc.parser.resume.entities import degrees, schools, corporations
-from rag.nlp import rag_tokenizer, surname
+from ragflow.deepdoc.parser.resume.entities import degrees, schools, corporations
+from ragflow.rag.nlp import rag_tokenizer, surname
 from xpinyin import Pinyin
 from contextlib import contextmanager
 

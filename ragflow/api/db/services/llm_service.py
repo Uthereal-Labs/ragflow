@@ -13,13 +13,13 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 #
-from api.db.services.user_service import TenantService
-from api.settings import database_logger
-from rag.llm import EmbeddingModel, CvModel, ChatModel, RerankModel
-from api.db import LLMType
-from api.db.db_models import DB, UserTenant
-from api.db.db_models import LLMFactories, LLM, TenantLLM
-from api.db.services.common_service import CommonService
+from ragflow.api.db.services.user_service import TenantService
+from ragflow.api.settings import database_logger
+from ragflow.rag.llm import EmbeddingModel, CvModel, ChatModel, RerankModel
+from ragflow.api.db import LLMType
+from ragflow.api.db.db_models import DB, UserTenant
+from ragflow.api.db.db_models import LLMFactories, LLM, TenantLLM
+from ragflow.api.db.services.common_service import CommonService
 
 
 class LLMFactoriesService(CommonService):

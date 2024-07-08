@@ -17,12 +17,12 @@ import re
 
 import pandas as pd
 import requests
-from api.db.services.knowledgebase_service import KnowledgebaseService
-from rag.nlp import rag_tokenizer
-from deepdoc.parser.resume import refactor
-from deepdoc.parser.resume import step_one, step_two
-from rag.settings import cron_logger
-from rag.utils import rmSpace
+from ragflow.api.db.services.knowledgebase_service import KnowledgebaseService
+from ragflow.rag.nlp import rag_tokenizer
+from ragflow.deepdoc.parser.resume import refactor
+from ragflow.deepdoc.parser.resume import step_one, step_two
+from ragflow.rag.settings import cron_logger
+from ragflow.rag.utils import rmSpace
 
 forbidden_select_fields4resume = [
     "name_pinyin_kwd", "edu_first_fea_kwd", "degree_kwd", "sch_rank_kwd", "edu_fea_kwd"

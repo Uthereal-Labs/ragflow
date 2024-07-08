@@ -16,16 +16,16 @@
 import re
 from copy import deepcopy
 
-from api.db import LLMType
-from api.db.db_models import Dialog, Conversation
-from api.db.services.common_service import CommonService
-from api.db.services.knowledgebase_service import KnowledgebaseService
-from api.db.services.llm_service import LLMService, TenantLLMService, LLMBundle
-from api.settings import chat_logger, retrievaler
-from rag.app.resume import forbidden_select_fields4resume
-from rag.nlp import keyword_extraction
-from rag.nlp.search import index_name
-from rag.utils import rmSpace, num_tokens_from_string, encoder
+from ragflow.api.db import LLMType
+from ragflow.api.db.db_models import Dialog, Conversation
+from ragflow.api.db.services.common_service import CommonService
+from ragflow.api.db.services.knowledgebase_service import KnowledgebaseService
+from ragflow.api.db.services.llm_service import LLMService, TenantLLMService, LLMBundle
+from ragflow.api.settings import chat_logger, retrievaler
+from ragflow.rag.app.resume import forbidden_select_fields4resume
+from ragflow.rag.nlp import keyword_extraction
+from ragflow.rag.nlp.search import index_name
+from ragflow.rag.utils import rmSpace, num_tokens_from_string, encoder
 
 
 class DialogService(CommonService):

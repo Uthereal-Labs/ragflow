@@ -15,7 +15,7 @@
 #
 import pathlib
 import re
-from .user_service import UserService
+from ragflow.db.services.user_service import UserService
 
 
 def duplicate_name(query_func, **kwargs):

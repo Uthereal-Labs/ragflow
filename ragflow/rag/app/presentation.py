@@ -16,9 +16,9 @@ from io import BytesIO
 
 from PIL import Image
 
-from rag.nlp import tokenize, is_english
-from rag.nlp import rag_tokenizer
-from deepdoc.parser import PdfParser, PptParser, PlainParser
+from ragflow.rag.nlp import tokenize, is_english
+from ragflow.rag.nlp import rag_tokenizer
+from ragflow.deepdoc.parser import PdfParser, PptParser, PlainParser
 from PyPDF2 import PdfReader as pdf2_read
 
 

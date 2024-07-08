@@ -19,7 +19,7 @@ from functools import partial
 
 import pandas as pd
 
-from graph.component.base import ComponentBase, ComponentParamBase
+from ragflow.graph.component.base import ComponentBase, ComponentParamBase
 
 
 class AnswerParam(ComponentParamBase):

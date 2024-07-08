@@ -21,7 +21,7 @@ import inspect
 from logging.handlers import TimedRotatingFileHandler
 from threading import RLock
 
-from api.utils import file_utils
+from ragflow.api.utils import file_utils
 
 
 class LoggerFactory(object):

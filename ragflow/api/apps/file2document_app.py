@@ -15,21 +15,21 @@
 #
 from elasticsearch_dsl import Q
 
-from api.db.db_models import File2Document
-from api.db.services.file2document_service import File2DocumentService
-from api.db.services.file_service import FileService
+from ragflow.api.db.db_models import File2Document
+from ragflow.api.db.services.file2document_service import File2DocumentService
+from ragflow.api.db.services.file_service import FileService
 
 from flask import request
 from flask_login import login_required, current_user
-from api.db.services.knowledgebase_service import KnowledgebaseService
-from api.utils.api_utils import server_error_response, get_data_error_result, validate_request
-from api.utils import get_uuid
-from api.db import FileType
-from api.db.services.document_service import DocumentService
-from api.settings import RetCode
-from api.utils.api_utils import get_json_result
-from rag.nlp import search
-from rag.utils.es_conn import ELASTICSEARCH
+from ragflow.api.db.services.knowledgebase_service import KnowledgebaseService
+from ragflow.api.utils.api_utils import server_error_response, get_data_error_result, validate_request
+from ragflow.api.utils import get_uuid
+from ragflow.api.db import FileType
+from ragflow.api.db.services.document_service import DocumentService
+from ragflow.api.settings import RetCode
+from ragflow.api.utils.api_utils import get_json_result
+from ragflow.rag.nlp import search
+from ragflow.rag.utils.es_conn import ELASTICSEARCH
 
 
 @manager.route('/convert', methods=['POST'])

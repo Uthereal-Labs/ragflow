@@ -21,8 +21,8 @@ from openai import OpenAI
 import openai
 from ollama import Client
 from volcengine.maas.v2 import MaasService
-from rag.nlp import is_english
-from rag.utils import num_tokens_from_string
+from ragflow.rag.nlp import is_english
+from ragflow.rag.utils import num_tokens_from_string
 
 
 class Base(ABC):

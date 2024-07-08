@@ -21,18 +21,18 @@ from flask import request, session, redirect
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import login_required, current_user, login_user, logout_user
 
-from api.db.db_models import TenantLLM
-from api.db.services.llm_service import TenantLLMService, LLMService
-from api.utils.api_utils import server_error_response, validate_request
-from api.utils import get_uuid, get_format_time, decrypt, download_img, current_timestamp, datetime_format
-from api.db import UserTenantRole, LLMType, FileType
-from api.settings import RetCode, GITHUB_OAUTH, FEISHU_OAUTH, CHAT_MDL, EMBEDDING_MDL, ASR_MDL, IMAGE2TEXT_MDL, PARSERS, \
+from ragflow.api.db.db_models import TenantLLM
+from ragflow.api.db.services.llm_service import TenantLLMService, LLMService
+from ragflow.api.utils.api_utils import server_error_response, validate_request
+from ragflow.api.utils import get_uuid, get_format_time, decrypt, download_img, current_timestamp, datetime_format
+from ragflow.api.db import UserTenantRole, LLMType, FileType
+from ragflow.api.settings import RetCode, GITHUB_OAUTH, FEISHU_OAUTH, CHAT_MDL, EMBEDDING_MDL, ASR_MDL, IMAGE2TEXT_MDL, PARSERS, \
     API_KEY, \
     LLM_FACTORY, LLM_BASE_URL, RERANK_MDL
-from api.db.services.user_service import UserService, TenantService, UserTenantService
-from api.db.services.file_service import FileService
-from api.settings import stat_logger
-from api.utils.api_utils import get_json_result, cors_reponse
+from ragflow.api.db.services.user_service import UserService, TenantService, UserTenantService
+from ragflow.api.db.services.file_service import FileService
+from ragflow.api.settings import stat_logger
+from ragflow.api.utils.api_utils import get_json_result, cors_reponse
 
 
 @manager.route('/login', methods=['POST', 'GET'])

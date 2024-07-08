@@ -19,16 +19,16 @@ import time
 import uuid
 from copy import deepcopy
 
-from api.db import LLMType, UserTenantRole
-from api.db.db_models import init_database_tables as init_web_db, LLMFactories, LLM, TenantLLM
-from api.db.services import UserService
-from api.db.services.canvas_service import CanvasTemplateService
-from api.db.services.document_service import DocumentService
-from api.db.services.knowledgebase_service import KnowledgebaseService
-from api.db.services.llm_service import LLMFactoriesService, LLMService, TenantLLMService, LLMBundle
-from api.db.services.user_service import TenantService, UserTenantService
-from api.settings import CHAT_MDL, EMBEDDING_MDL, ASR_MDL, IMAGE2TEXT_MDL, PARSERS, LLM_FACTORY, API_KEY, LLM_BASE_URL
-from api.utils.file_utils import get_project_base_directory
+from ragflow.api.db import LLMType, UserTenantRole
+from ragflow.api.db.db_models import init_database_tables as init_web_db, LLMFactories, LLM, TenantLLM
+from ragflow.api.db.services import UserService
+from ragflow.api.db.services.canvas_service import CanvasTemplateService
+from ragflow.api.db.services.document_service import DocumentService
+from ragflow.api.db.services.knowledgebase_service import KnowledgebaseService
+from ragflow.api.db.services.llm_service import LLMFactoriesService, LLMService, TenantLLMService, LLMBundle
+from ragflow.api.db.services.user_service import TenantService, UserTenantService
+from ragflow.api.settings import CHAT_MDL, EMBEDDING_MDL, ASR_MDL, IMAGE2TEXT_MDL, PARSERS, LLM_FACTORY, API_KEY, LLM_BASE_URL
+from ragflow.api.utils.file_utils import get_project_base_directory
 
 
 def init_superuser():

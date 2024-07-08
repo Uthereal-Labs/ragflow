@@ -17,8 +17,8 @@ import argparse
 import os
 from functools import partial
 import readline
-from graph.canvas import Canvas
-from graph.settings import DEBUG
+from ragflow.graph.canvas import Canvas
+from ragflow.graph.settings import DEBUG
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

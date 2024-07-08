@@ -22,7 +22,7 @@ import umap
 import numpy as np
 from sklearn.mixture import GaussianMixture
 
-from rag.utils import num_tokens_from_string, truncate
+from ragflow.rag.utils import num_tokens_from_string, truncate
 
 
 class RecursiveAbstractiveProcessing4TreeOrganizedRetrieval:

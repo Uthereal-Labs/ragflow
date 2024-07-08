@@ -17,12 +17,12 @@
 import copy
 import re
 
-from api.db import ParserType
+from ragflow.api.db import ParserType
 from io import BytesIO
-from rag.nlp import rag_tokenizer, tokenize, tokenize_table, add_positions, bullets_category, title_frequency, tokenize_chunks, docx_question_level
-from deepdoc.parser import PdfParser, PlainParser
-from rag.utils import num_tokens_from_string
-from deepdoc.parser import PdfParser, ExcelParser, DocxParser
+from ragflow.rag.nlp import rag_tokenizer, tokenize, tokenize_table, add_positions, bullets_category, title_frequency, tokenize_chunks, docx_question_level
+from ragflow.deepdoc.parser import PdfParser, PlainParser
+from ragflow.rag.utils import num_tokens_from_string
+from ragflow.deepdoc.parser import PdfParser, ExcelParser, DocxParser
 from docx import Document
 from PIL import Image
 

@@ -13,9 +13,9 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 #
-from api.db import StatusEnum, TenantPermission
-from api.db.db_models import Knowledgebase, DB, Tenant
-from api.db.services.common_service import CommonService
+from ragflow.api.db import StatusEnum, TenantPermission
+from ragflow.api.db.db_models import Knowledgebase, DB, Tenant
+from ragflow.api.db.services.common_service import CommonService
 
 
 class KnowledgebaseService(CommonService):

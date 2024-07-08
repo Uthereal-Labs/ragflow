@@ -13,10 +13,10 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 #
-from .embedding_model import *
-from .chat_model import *
-from .cv_model import *
-from .rerank_model import *
+from ragflow.rag.llm.embedding_model import *
+from ragflow.rag.llm.chat_model import *
+from ragflow.rag.llm.cv_model import *
+from ragflow.rag.llm.rerank_model import *
 
 
 EmbeddingModel = {
