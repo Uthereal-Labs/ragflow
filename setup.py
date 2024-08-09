@@ -1,8 +1,10 @@
 from setuptools import setup, find_packages
 
+
 def parse_requirements(filename):
     with open(filename, 'r') as file:
         return file.read().splitlines()
+
 
 setup(
     name='ragflow',
@@ -19,4 +21,8 @@ setup(
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.6',
+    package_data={
+        "ragflow": ['conf/service_conf.yaml'],
+    },
+    include_package_data=True,
 )
